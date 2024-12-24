@@ -1,4 +1,12 @@
 
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Data;
+using System.Security.Principal;
+using SocialMechatronicsNetwork.Entities;
+using Microsoft.EntityFrameworkCore;
+
 namespace SocialMechatronicsNetwork
 {
     public class Program
@@ -8,6 +16,20 @@ namespace SocialMechatronicsNetwork
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            var connectionString = builder.Configuration.GetConnectionString("Default");
+            //dependency Injection DataBase
+            builder.Services.AddDbContext<SocialMechatronicsNetworkContext>(optionsBuilder => optionsBuilder.UseNpgsql(connectionString));
+
+            //dependency Injection AutoMapper
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            //Dependency Injection Services   
+            //builder.Services.AddScoped<IJWTUtil, JWTUtilSha256>();
+
+            //Dependency Injection GenericRepository  
+            //builder.Services.AddScoped<IRepository<BTSensorsSerialsPermission>, Repository<BTSensorsSerialsPermission>>();
+
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
