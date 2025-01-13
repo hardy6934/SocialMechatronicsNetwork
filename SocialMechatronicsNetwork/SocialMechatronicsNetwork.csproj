@@ -26,9 +26,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Buisness\Services\" />
-    <Folder Include="Buisness\IServices\" />
     <Folder Include="Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SocialMechatronicsNetwork.Buisness\SocialMechatronicsNetwork.Buisness.csproj" />
+    <ProjectReference Include="..\SocialMechatronicsNetwork.CQS\SocialMechatronicsNetwork.CQS.csproj" />
+    <ProjectReference Include="..\SocialMechatronicsNetwork.DataBase\SocialMechatronicsNetwork.DataBase.csproj" />
   </ItemGroup>
 
 </Project>

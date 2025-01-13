@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMechatronicsNetwork", "SocialMechatronicsNetwork\SocialMechatronicsNetwork.csproj", "{87260868-4153-4106-9F68-8E96795F4817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMechatronicsNetwork", "SocialMechatronicsNetwork\SocialMechatronicsNetwork.csproj", "{87260868-4153-4106-9F68-8E96795F4817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMechatronicsNetwork.DataBase", "SocialMechatronicsNetwork.DataBase\SocialMechatronicsNetwork.DataBase.csproj", "{424D5B65-1BC3-4264-A170-24A973846B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMechatronicsNetwork.CQS", "SocialMechatronicsNetwork.CQS\SocialMechatronicsNetwork.CQS.csproj", "{CED8160B-84ED-47CD-880D-6478669A9C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMechatronicsNetwork.Buisness", "SocialMechatronicsNetwork.Buisness\SocialMechatronicsNetwork.Buisness.csproj", "{6850B774-476A-4E5E-A2CB-4D23B649D6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMechatronicsNetwork.Core", "SocialMechatronicsNetwork.Core\SocialMechatronicsNetwork.Core.csproj", "{FEBC9736-4B68-4392-BA94-AD214A68B8F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{87260868-4153-4106-9F68-8E96795F4817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87260868-4153-4106-9F68-8E96795F4817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87260868-4153-4106-9F68-8E96795F4817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424D5B65-1BC3-4264-A170-24A973846B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424D5B65-1BC3-4264-A170-24A973846B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424D5B65-1BC3-4264-A170-24A973846B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424D5B65-1BC3-4264-A170-24A973846B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED8160B-84ED-47CD-880D-6478669A9C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED8160B-84ED-47CD-880D-6478669A9C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED8160B-84ED-47CD-880D-6478669A9C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED8160B-84ED-47CD-880D-6478669A9C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6850B774-476A-4E5E-A2CB-4D23B649D6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6850B774-476A-4E5E-A2CB-4D23B649D6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6850B774-476A-4E5E-A2CB-4D23B649D6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6850B774-476A-4E5E-A2CB-4D23B649D6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBC9736-4B68-4392-BA94-AD214A68B8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBC9736-4B68-4392-BA94-AD214A68B8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBC9736-4B68-4392-BA94-AD214A68B8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBC9736-4B68-4392-BA94-AD214A68B8F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

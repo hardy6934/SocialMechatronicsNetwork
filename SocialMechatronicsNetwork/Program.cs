@@ -1,11 +1,12 @@
-
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Data;
-using System.Security.Principal;
-using SocialMechatronicsNetwork.Entities;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using SocialMechatronicsNetwork.Buisness.Services;
+using SocialMechatronicsNetwork.Core.Abstractions;
+using SocialMechatronicsNetwork.CQS.Commands;
+using SocialMechatronicsNetwork.CQS.Handlers.CommandHandlers;
+using SocialMechatronicsNetwork.DataBase;
+using System.Reflection;
 
 namespace SocialMechatronicsNetwork
 {
@@ -23,13 +24,12 @@ namespace SocialMechatronicsNetwork
             //dependency Injection AutoMapper
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            //Dependency Injection Services   
-            //builder.Services.AddScoped<IJWTUtil, JWTUtilSha256>();
-
-            //Dependency Injection GenericRepository  
-            //builder.Services.AddScoped<IRepository<BTSensorsSerialsPermission>, Repository<BTSensorsSerialsPermission>>();
+            //dependency Injection Handlers  
+            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(AddChatCommand)));
 
 
+            //dependency Injection Services 
+            builder.Services.AddScoped<IChatService, ChatService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

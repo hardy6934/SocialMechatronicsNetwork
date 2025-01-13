@@ -1,8 +1,7 @@
-﻿using SocialMechatronicsNetwork.Entities;
-
+﻿
 namespace SocialMechatronicsNetwork.Core.DTO
 {
-    public class MessageDTO
+    public class ChatUserDTO
     {
         public int Id { get; set; }
         public string Content { get; set; }

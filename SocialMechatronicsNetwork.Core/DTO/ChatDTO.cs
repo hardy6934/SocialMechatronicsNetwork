@@ -1,5 +1,4 @@
-﻿using SocialMechatronicsNetwork.Entities;
-
+﻿
 namespace SocialMechatronicsNetwork.Core.DTO
 {
     public class ChatDTO
